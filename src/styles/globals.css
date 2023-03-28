@@ -10,4 +10,20 @@
   body {
     @apply bg-zinc-200 text-black font-roboto w-full
   }
+
+  .outlineText {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #d8fce0e8;
+    -webkit-text-stroke-color: #d8fce0e8;
+    opacity: 1;
+    color: transparent !important;
+    -webkit-text-stroke-width: 1px;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+  }
 }
