@@ -51,8 +51,8 @@ export const Nav = () => {
       > {/**ul */}
         {Links.map((link, index) => (
           <div className="text-xl hover:text-green-400 
-            duration-500 md:hover:bg-green-50
-            rounded-sm md:hover:shadow-md py-2 px-1 md:my-0 my-2"
+            duration-500 md:border-b-[1px] md:border-transparent md:hover:border-blue-900
+            rounded-sm md:hover:shadow-sm py-2 px-1 md:my-0 my-2"
             key={index}
           >
             <Link
