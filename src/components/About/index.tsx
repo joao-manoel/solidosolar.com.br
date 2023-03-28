@@ -1,11 +1,9 @@
-import Logo from "@/assets/images/logo.png"
-import Image from "next/image"
 export const About = () => {
   return (
-    <main className="bg-white py-6 px-5 flex md:flex-row flex-col justify-center">
+    <div className="bg-white py-6 px-5 flex md:flex-row flex-col justify-center">
       
 
-      <div className="md:w-1/3 w-screen  gap-2 flex flex-col">
+      <div className="md:w-1/3 w-full  gap-2 flex flex-col">
         <h1 className="
           text-5xl border-l-4 border-orange-400 px-2 font-inter font-thin text-orange-400">
           Quem Somos
@@ -20,14 +18,14 @@ export const About = () => {
       </div>
 
 
-      <div className="flex justify-center md:w-1/2 w-screen">
+      <div className="flex justify-center md:w-1/2 w-full">
 
         <div className="flex flex-col items-center gap-4 px-2 py-2">
-          <Image src={Logo} width={484} height={284} alt="Solido Solar" />
+          
         </div>
         
       </div>
       
-    </main>
+    </div>
   )
 }

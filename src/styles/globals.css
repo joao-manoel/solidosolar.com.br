@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 @layer {
+  * {
+    @apply my-0 my-0 py-0 px-0
+  }
+
   body {
-    @apply bg-zinc-200 text-black font-roboto
+    @apply bg-zinc-200 text-black font-roboto w-full
   }
 }
