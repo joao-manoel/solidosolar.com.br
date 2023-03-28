@@ -13,7 +13,14 @@ export const About = () => {
             Quem Somos
           </h1>
         </div>
-        <p className="font-medium text-2xl text-gray-400 mt-[-50px] z-20">Somos especialistas em gerar resultados</p>
+        <p className="
+          font-medium text-2xl text-gray-400
+          mt-[-50px] z-20
+
+          animate__animated animate__fadeInUp
+        ">
+          Somos especialistas em gerar resultados
+        </p>
       </header>      
     </div>
   )
