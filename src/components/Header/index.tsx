@@ -6,7 +6,7 @@ import { Nav } from "./Nav"
 
 export const Header = () => {
   return (
-    <main className="w-screen bg-white shadow-sm">
+    <main className="w-screen bg-white shadow-sm md:z-auto z-[999]">
       <header className="w-full px-5 md:flex md:justify-between items-center">
         <div className="py-4">
           <Link href="/">

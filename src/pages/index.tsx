@@ -1,9 +1,9 @@
-import { Header } from "@/components/Header";
+import Home from "./home";
 
-export default function Home() {
+export default function Index() {
   return (
     <>
-      <Header />
+      <Home />
     </>
   )
 }
