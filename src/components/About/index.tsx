@@ -1,6 +1,6 @@
 export const About = () => {
   return (
-    <div className="bg-white py-6 px-5 flex justify-center">
+    <div id="about" className="bg-white py-6 px-5 flex justify-center">
       <header className="relative flex flex-col items-center justify-center">
         <div className="relative flex justify-center z-10">
           <h1 className="text-9xl outlineText relative">Sobre</h1>
@@ -14,7 +14,7 @@ export const About = () => {
           </h1>
         </div>
         <p className="
-          font-medium text-2xl text-gray-400
+          font-medium text-lg md:text-2xl text-gray-400
           mt-[-50px] z-20
 
           animate__animated animate__fadeInUp

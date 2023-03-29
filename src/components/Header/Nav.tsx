@@ -1,15 +1,16 @@
-import Link from "next/link"
-import { useState } from "react"
+import Link from "next/link";
+import { useState } from "react";
 
 import {
   HiClipboardCheck,
   HiHome,
   HiMenu,
-  HiOutlineBadgeCheck,
-  HiPresentationChartBar,
   HiX
-} from "react-icons/hi"
-import { Button } from "../Button"
+} from "react-icons/hi";
+import { MdBuild } from "react-icons/md";
+import { TfiBlackboard } from "react-icons/tfi";
+
+import { Button } from "../Button";
 
 export const Nav = () => {
 
@@ -21,13 +22,13 @@ export const Nav = () => {
     },
     {
       name: 'Sobre Nós',
-      url: '/',
-      icon: HiOutlineBadgeCheck
+      url: '#about',
+      icon: TfiBlackboard
     },
     {
       name: 'Serviços',
       url: '/',
-      icon: HiPresentationChartBar
+      icon: MdBuild
     },
   ]
 
