@@ -22,7 +22,10 @@ export const About = () => {
         ">
           Somos especialistas em criar soluções
         </p>
-      </header>      
+      </header>
+      <div>
+        
+      </div>
     </div>
   )
 }
