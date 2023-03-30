@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html lang="pt-Br">
       <Head>
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="description" content="Solido Solar uma empresa de energia solar." />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
