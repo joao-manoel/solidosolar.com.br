@@ -5,7 +5,7 @@ export const HomeFeatureSection = () => {
         min-h-[350px]
         h-[calc(100vh-118px-188px)]
         w-full
-        flex flex-col items-center justify-center gap-4
+        flex flex-col items-center justify-center gap-4 px-2
         "
     >
       <h1
