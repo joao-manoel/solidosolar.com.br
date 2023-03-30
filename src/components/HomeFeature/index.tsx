@@ -10,7 +10,7 @@ export const HomeFeatureSection = () => {
     >
       <h1
         className="text-8xl md:text-9xl font-roboto font-bold  outlineText
-        animate__animated animate__flash animate__infinite
+        animate__animated animate__flash animate__infinite animate__slow
         drop-shadow-2xl
         "
       >
@@ -18,12 +18,17 @@ export const HomeFeatureSection = () => {
       </h1>
 
       <h2
-        className="font-bold text-2xl text-white drop-shadow-md mt-[-25px]"
+        className="
+          font-bold text-2xl text-white drop-shadow-md mt-[-25px]
+          animate__animated animate__fadeInDown
+        "
       >
         Excelência, Rapidez e Qualidade
       </h2>
       <p
-        className="text-gray-300 drop-shadow-sm text-md font-light mt-[-10px] text-center"
+        className="text-gray-300 drop-shadow-sm text-md font-light mt-[-10px] text-center
+          animate__animated animate__fadeInUp
+        "
       >
         Uma empressa 100% Matogrossense focada em gerar energia limpa e sustentável.
       </p>
@@ -32,13 +37,13 @@ export const HomeFeatureSection = () => {
         className="mt-2 flex flex-col items-center justify-center gap-2"
       >
         <div className="text-gray-300 flex gap-5 ">
-          <span>Residencial</span>
-          <span>Comercial</span>
-          <span>Industrial</span>
-          <span>Agronegócio</span>
+          <span className="animate__animated animate__bounceIn animate__delay-1s">Residencial</span>
+          <span className="animate__animated animate__bounceIn animate__delay-1s">Comercial</span>
+          <span className="animate__animated animate__bounceIn animate__delay-1s">Industrial</span>
+          <span className="animate__animated animate__bounceIn animate__delay-1s">Agronegócio</span>
         </div>
         <button
-          className="px-4 py-2 
+          className="px-4 py-2 uppercase font-inter
             bg-green-500 hover:bg-green-400 duration-500
             text-white font-bold text-2xl 
             drop-shadow-lg 
