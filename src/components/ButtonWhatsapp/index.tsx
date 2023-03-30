@@ -63,9 +63,9 @@ export const ButtonWhatsapp = () => {
               <button className="
                 flex justify-center items-center gap-1 text-white rounded-md 
                 drop-shadow-md bg-green-500 hover:bg-green-400 duration-500
-                w-full py-2 px-2 mt-10
+                w-full py-4 px-2 mt-10
                 font-normal
-                text-sm
+                text-md
               ">
                 <FaWhatsapp />
                 <span >Abrir o Whatsapp</span>
