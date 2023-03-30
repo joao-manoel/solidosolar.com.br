@@ -1,4 +1,5 @@
 export const About = () => {
+  
   return (
     <div id="about" className="bg-white py-6 px-5 flex justify-center">
       <header className="relative flex flex-col items-center justify-center">
@@ -8,7 +9,7 @@ export const About = () => {
             absolute top-1/3
             font-bold text-green-500 text-4xl 
 
-            animate__animated animate__fadeIn
+            wow animate__animated animate__fadeIn
           ">
             Quem Somos
           </h1>
@@ -19,7 +20,7 @@ export const About = () => {
 
           animate__animated animate__fadeInUp
         ">
-          Somos especialistas em gerar resultados
+          Somos especialistas em criar soluções
         </p>
       </header>      
     </div>

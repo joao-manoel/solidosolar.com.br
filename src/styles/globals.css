@@ -26,4 +26,27 @@
     user-select: none;
     /* Standard syntax */
   }
+
+  .outlineText-White {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    -webkit-text-stroke-color: #ffffff;
+    opacity: 1;
+    color: transparent !important;
+    -webkit-text-stroke-width: 1px;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+  }
+
+  .home_feature {
+    background-image: url('../assets/images/home_feature.png');
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
 }
