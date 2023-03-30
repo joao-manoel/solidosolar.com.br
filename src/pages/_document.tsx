@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html lang="pt-Br">
       <Head>
-        <title>Solido Solar</title>
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="description" content="Solido Solar uma empresa de energia solar." />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
