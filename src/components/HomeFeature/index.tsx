@@ -50,6 +50,7 @@ export const HomeFeatureSection = () => {
             rounded-tl-2xl rounded-br-2xl
             hover:rounded-tl-none hover:rounded-br-none
             hover:rounded-bl-2xl hover:rounded-tr-2xl
+            animate__animated animate__flipInX
           "
         >
           Faça seu orçamento
