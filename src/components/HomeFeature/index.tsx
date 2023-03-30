@@ -2,6 +2,7 @@ export const HomeFeatureSection = () => {
   return (
     <div className="
         home_feature
+        min-h-[282px]
         h-[calc(100vh-118px-188px)]
         w-full
         flex flex-col items-center justify-center gap-4
