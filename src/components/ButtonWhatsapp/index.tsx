@@ -6,7 +6,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { FaWhatsapp } from "react-icons/fa";
 export const ButtonWhatsapp = () => {
   let text = 'Essa é uma mensagem enviada através do site solido solar.'
-  let phoneNumber = '65981301850'
+  let phoneNumber = '65992194096'
 
   const [isOpen, setIsOpen] = useState(false)
 
