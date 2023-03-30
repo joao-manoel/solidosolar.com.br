@@ -52,12 +52,12 @@ export const ButtonWhatsapp = () => {
             className="bg-gray-200 rounded-b-md py-2 px-2"
           >
             <div
-              className="shadow-lg bg-white rounded-md py-2 px-2
+              className="
                 text-gray-600 font-thin
               "
             >
-              <p>Olá 👋</p>
-              <p>Podemos te ajudar?</p>
+              <p className="shadow-lg bg-white rounded-md py-2 px-2 w-fit">Olá 👋</p>
+              <p className="shadow-lg bg-white rounded-md py-2 px-2 mt-1 w-fit">Podemos te ajudar?</p>
             </div>
             <Link target="_blank" href={`https://api.whatsapp.com/send?phone=${phoneNumber}&text=${text}&type=phone_number&app_absent=0`}>
               <button className="
