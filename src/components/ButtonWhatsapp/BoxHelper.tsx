@@ -1,4 +1,4 @@
-import { FcAnswers, FcDecision, FcDocument } from "react-icons/fc";
+import { FcAnswers, FcDecision, FcViewDetails } from "react-icons/fc";
 
 interface BoxHelper {
   type: 'orcamento' | 'duvida' | 'outros'
@@ -21,7 +21,7 @@ export const BoxHelper = ({ type }: BoxHelper) => {
     `}>
       
       {
-        type == 'orcamento' ?  <FcDocument className="text-2xl" /> :
+        type == 'orcamento' ?  <FcViewDetails className="text-2xl" /> :
         type == 'duvida' ? <FcDecision className="text-2xl" />:
         type == 'outros'? <FcAnswers className="text-2xl" /> : ''
       }
