@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { useState } from "react";
 
 import { Tooltip } from "flowbite-react";
@@ -11,6 +10,10 @@ export const ButtonWhatsapp = () => {
   let phoneNumber = '65992194096'
 
   const [isOpen, setIsOpen] = useState(false)
+
+  const HandleLinkWhatsapp = () => {
+    window.open(`https://api.whatsapp.com/send?phone=${phoneNumber}&text=${text}`, '_blank')
+  }
 
   return (
     <div
@@ -72,18 +75,19 @@ export const ButtonWhatsapp = () => {
               <BoxHelper type='duvida' />
               <BoxHelper type='outros' />
             </div>
-            <Link target="_blank" href={`https://api.whatsapp.com/send?phone=${phoneNumber}&text=${text}&type=phone_number&app_absent=0`}>
-              <button className="
-                flex justify-center items-center gap-1 text-white rounded-md 
-                drop-shadow-md bg-green-500 hover:bg-green-400 duration-500
-                w-full py-4 px-2 mt-2
-                font-normal
-                text-md disabled:bg-gray-500
-              " disabled>
-                <FaWhatsapp />
-                <span >Abrir o Whatsapp</span>
-              </button>
-            </Link>
+            
+            <button
+              onClick={HandleLinkWhatsapp}
+              className="
+              flex justify-center items-center gap-1 text-white rounded-md 
+              drop-shadow-md bg-green-500 hover:bg-green-400 duration-500
+              w-full py-4 px-2 mt-2
+              font-normal
+              text-md disabled:bg-gray-500
+            " disabled>
+              <FaWhatsapp />
+              <span >Abrir o Whatsapp</span>
+            </button>
             
           </div>
         </div>
