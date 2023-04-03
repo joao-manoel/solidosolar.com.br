@@ -9,10 +9,7 @@ export const SliderPartners = () => {
   const [WindowsWidth, setWindowsWidth] = useState(0)
 
   useEffect(() => {
-    
-    addEventListener("resize", (event) => {
-      setWindowsWidth(window.screen.width)
-    });
+    setWindowsWidth(window.screen.width)
   }, [])
 
   return (
