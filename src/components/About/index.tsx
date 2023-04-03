@@ -30,7 +30,7 @@ export const About = () => {
           Somos especialistas em criar soluções
         </h3>
       </header>
-      <div className="w-full sm:w-9/12 lg:flex gap-2 mt-5">
+      <div className="w-full sm:w-9/12 lg:flex gap-2 mt-16 mb-16">
         
         <div
           className="w-full sm:max-w-2xl py-2 px-2"
@@ -51,10 +51,10 @@ export const About = () => {
           </div>
         </div>
         <div
-          className="w-full "
+          className="w-full flex justify-center items-center "
         >
           <img
-            className="rounded-3xl drop-shadow-lg "  
+            className="rounded-3xl drop-shadow-lg max-h-[400px]"  
             src="/images/fachada.png" alt=""
           />
         </div>

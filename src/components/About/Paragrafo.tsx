@@ -5,7 +5,7 @@ interface ParagrafoProps {
 
 export const Paragrafo = ({ children }: ParagrafoProps) => {
   return (
-    <p className="text-sm md:text-lg font-light leading-7 mb-4 px-10">
+    <p className="text-sm md:text-lg font-light leading-4 mb-4 px-2 md:px-5">
       {children}
     </p>
   )

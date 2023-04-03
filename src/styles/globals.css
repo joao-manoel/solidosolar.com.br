@@ -8,14 +8,14 @@
   }
 
   body {
-    @apply bg-zinc-100 text-black font-roboto w-full
+    @apply bg-white text-black font-roboto w-full
   }
 
   .outlineText {
     font-weight: bold;
     text-transform: uppercase;
-    color: #98faade8;
-    -webkit-text-stroke-color: #98faade8;
+    color: #c1f8cde8;
+    -webkit-text-stroke-color: #c1f8cde8;
     opacity: 1;
     color: transparent !important;
     -webkit-text-stroke-width: 1px;
