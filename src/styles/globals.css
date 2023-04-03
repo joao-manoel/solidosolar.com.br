@@ -14,8 +14,8 @@
   .outlineText {
     font-weight: bold;
     text-transform: uppercase;
-    color: #c6fad1e8;
-    -webkit-text-stroke-color: #c6fad1e8;
+    color: #98faade8;
+    -webkit-text-stroke-color: #98faade8;
     opacity: 1;
     color: transparent !important;
     -webkit-text-stroke-width: 1px;
@@ -48,5 +48,11 @@
     background-position: top center;
     background-size: cover;
     background-attachment: fixed;
+  }
+
+  .shape {
+    width: 469px;
+    height: 469px;
+    border-radius: 30% 70% 70% 30% / 30% 22% 78% 70%;
   }
 }

@@ -1,18 +1,31 @@
 import { useState } from "react";
 
+import { CREATE_MESSAGE } from "@/utils/CreateMessageWhatsapp";
 import { Tooltip } from "flowbite-react";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaWhatsapp } from "react-icons/fa";
-import { BoxHelper } from "./BoxHelper";
+import { ButtonType } from "./ButtonType";
+
+export type TypeProps = 'orcamento' | 'duvida' | 'outro'
 
 export const ButtonWhatsapp = () => {
-  let text = 'Essa é uma mensagem enviada através do site solido solar.'
   let phoneNumber = '65992194096'
 
   const [isOpen, setIsOpen] = useState(false)
 
+  const [type, setType] = useState<TypeProps>('orcamento')
+
   const HandleLinkWhatsapp = () => {
-    window.open(`https://api.whatsapp.com/send?phone=${phoneNumber}&text=${text}`, '_blank')
+    window.open(`https://api.whatsapp.com/send?phone=${phoneNumber}&text=${CREATE_MESSAGE(type)}`, '_blank')
+    setIsOpen(false)
+  }
+
+  const isType = () => {
+    if (type === 'orcamento' || type === 'duvida' || type === 'outro') {
+      return true
+    }
+
+    return false
   }
 
   return (
@@ -71,9 +84,21 @@ export const ButtonWhatsapp = () => {
             <div
               className="flex justify-center gap-2 h-full px-2"
             >
-              <BoxHelper type='orcamento' />
-              <BoxHelper type='duvida' />
-              <BoxHelper type='outros' />
+              <ButtonType
+                onClick={() => setType('orcamento')}
+                isType='orcamento'
+                isSelected={type === 'orcamento' ? true : false}
+              />
+              <ButtonType 
+                onClick={() => setType('duvida')}
+                isType='duvida' 
+                isSelected={type === 'duvida' ? true : false} 
+                />
+              <ButtonType 
+                onClick={() => setType('outro')}
+                isType='outros' 
+                isSelected={type === 'outro' ? true : false} 
+                />
             </div>
             
             <button
@@ -84,7 +109,7 @@ export const ButtonWhatsapp = () => {
               w-full py-4 px-2 mt-2
               font-normal
               text-md disabled:bg-gray-500
-            " disabled>
+            " disabled={isType() ? false : true}>
               <FaWhatsapp />
               <span >Abrir o Whatsapp</span>
             </button>
