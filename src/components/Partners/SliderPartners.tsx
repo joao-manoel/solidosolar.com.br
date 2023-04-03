@@ -19,7 +19,7 @@ export const SliderPartners = () => {
     <Swiper
       spaceBetween={70}
       slidesPerView={WindowsWidth <= 285 ? 2 : WindowsWidth <= 500 ? 3 : WindowsWidth <= 900 ? 4 : 5}
-      className='flex items-center justify-center h-20 py-4'
+      className='flex items-center justify-center h-20 py-4 mt-5'
     >
       <SwiperSlide className="">
         <img src='/images/risen.png' className="h-full"/>
