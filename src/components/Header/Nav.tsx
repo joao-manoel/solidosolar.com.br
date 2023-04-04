@@ -8,7 +8,7 @@ import {
 } from "react-icons/hi";
 import { MdBuild } from "react-icons/md";
 
-import { Button } from "../Button";
+import { Button } from "../Home/Button";
 
 export const Nav = () => {
 

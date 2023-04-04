@@ -4,11 +4,11 @@ import { CREATE_MESSAGE } from "@/utils/CreateMessageWhatsapp";
 import { Tooltip } from "flowbite-react";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaWhatsapp } from "react-icons/fa";
-import { ButtonType } from "./ButtonType";
+import { WidgetBtnType } from "./WidgetBtnType";
 
 export type TypeProps = 'orcamento' | 'duvida' | 'outro'
 
-export const ButtonWhatsapp = () => {
+export const WidgetsWhatsapp = () => {
   let phoneNumber = '65992194096'
 
   const [isOpen, setIsOpen] = useState(false)
@@ -84,17 +84,17 @@ export const ButtonWhatsapp = () => {
             <div
               className="flex justify-center gap-2 h-full px-2"
             >
-              <ButtonType
+              <WidgetBtnType
                 onClick={() => setType('orcamento')}
                 isType='orcamento'
                 isSelected={type === 'orcamento' ? true : false}
               />
-              <ButtonType 
+              <WidgetBtnType 
                 onClick={() => setType('duvida')}
                 isType='duvida' 
                 isSelected={type === 'duvida' ? true : false} 
                 />
-              <ButtonType 
+              <WidgetBtnType 
                 onClick={() => setType('outro')}
                 isType='outros' 
                 isSelected={type === 'outro' ? true : false} 

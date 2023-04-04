@@ -7,7 +7,7 @@ interface ButtonTypesInterface {
   onClick: () => void
 }
 
-const Button: ForwardRefRenderFunction<ButtonHTMLAttributes<ButtonTypesInterface>, ButtonTypesInterface> = (
+const WidgetType: ForwardRefRenderFunction<ButtonHTMLAttributes<ButtonTypesInterface>, ButtonTypesInterface> = (
   { isType, isSelected, onClick, ...buttonRest }: ButtonTypesInterface, ref) => {
   
   return (
@@ -45,4 +45,4 @@ const Button: ForwardRefRenderFunction<ButtonHTMLAttributes<ButtonTypesInterface
   )
 }
 
-export const ButtonType = forwardRef(Button)
+export const WidgetBtnType = forwardRef(WidgetType)

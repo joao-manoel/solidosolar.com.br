@@ -1,4 +1,4 @@
-export const HomeFeatureSection = () => {
+export const HeroSection = () => {
   return (
     <div className="
         home_feature

@@ -1,4 +1,4 @@
-import { TypeProps } from "@/components/ButtonWhatsapp"
+import { TypeProps } from "@/components/WidgetsWhatsapp"
 
 export const CREATE_MESSAGE = (type: TypeProps) => {
   let message
