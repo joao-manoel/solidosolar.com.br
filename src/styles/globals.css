@@ -27,6 +27,22 @@
     /* Standard syntax */
   }
 
+  .outlineTextAboutTitle {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #a9ebb8e8;
+    -webkit-text-stroke-color: #a9ebb8e8;
+    opacity: 1;
+    color: transparent !important;
+    -webkit-text-stroke-width: 1px;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+  }
+
   .outlineText-White {
     font-weight: bold;
     text-transform: uppercase;

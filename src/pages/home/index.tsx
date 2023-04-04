@@ -1,8 +1,8 @@
-import { About } from "@/components/About";
 import { Brand } from "@/components/Brand";
 import { Header } from "@/components/Header";
+import { HomeFeatureSection } from "@/components/HomeFeature";
 import { Partners } from "@/components/Partners";
-import { HomeFeatureSection } from "../../components/HomeFeature";
+import SobreNos from "@/components/gpt/about";
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
       <Header />
       <HomeFeatureSection />
       <Brand />
-      <About />
+      <SobreNos />
       <Partners />
     </>
   )
