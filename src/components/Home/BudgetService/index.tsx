@@ -25,7 +25,7 @@ export const BudgetService = () => {
         flex flex-col sm:flex-row items-center justify-between
         absolute bottom-0 xs:-mb-52 sm:-mb-36
         xs:gap-4
-        rounded-sm"
+        rounded-md"
       >
         <div>
           <h3 className="text-2xl font-bold">Solicite um orçamento</h3>

@@ -13,7 +13,7 @@ export const ImageItem = ({ url, n, title }: ImageItemProps) => {
     <div
       className={`
         bg-red-300 h-96 md:h-screen md:min-w-[33.3%]
-        ${n === 1 ? "bg-[url('../assets/images/inversores.jpg')]" : n === 2 ? "bg-[url('../assets/images/placas-solares.jpg')]" : "bg-[url('../assets/images/sustentavel.jpeg')]"}
+        ${n === 1 ? "bg-[url('../assets/images/inversores.jpg')]" : n === 2 ? "bg-[url('../assets/images/paineis-solares.jpg')]" : "bg-[url('../assets/images/sustentavel.jpg')]"}
         bg-left bg-cover
         grayscale hover:grayscale-0 duration-500
         flex flex-col items-center justify-center
