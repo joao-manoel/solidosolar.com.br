@@ -71,4 +71,8 @@
     height: 469px;
     border-radius: 30% 70% 70% 30% / 30% 22% 78% 70%;
   }
+
+  .h-other:hover h1 {
+    @apply hidden duration-500
+  }
 }
