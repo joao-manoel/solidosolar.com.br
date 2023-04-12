@@ -2,7 +2,7 @@ import { ImageItem } from "./item"
 
 export const BudgetService = () => {
   return (
-    <div className="relative flex flex-col items-center mb-44">
+    <div className="relative flex flex-col items-center mb-56 sm:mb-44">
       <div className="min-h-[800px] w-full md:flex ">
         <ImageItem
           title='Inversores'

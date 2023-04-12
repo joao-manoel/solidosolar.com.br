@@ -7,7 +7,7 @@ export const ProjectGallery = () => {
           <h1 className="
             absolute top-1/3
             font-bold text-green-500 
-            text-2xl sm:text-4xl md:text-5xl lg:text-5xl
+            text-xl sm:text-4xl md:text-5xl lg:text-5xl
             wow animate__animated animate__fadeIn
           ">
             Nossos Últimos Projetos
