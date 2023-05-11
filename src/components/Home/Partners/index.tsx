@@ -1,5 +1,3 @@
-
-
 import bedinSolarImage from '@/assets/images/bedinsolar.png'
 import canadianSolarImage from '@/assets/images/canadiansolar.png'
 import octechImage from '@/assets/images/octech.png'
@@ -9,7 +7,7 @@ import { Slider } from '../../Slider'
 
 
 
-  const images = [
+const images = [
   risenImage,
   sofarImage,
   octechImage,
@@ -18,10 +16,6 @@ import { Slider } from '../../Slider'
 ]
 
 export const Partners = () => {
-
-  
-
-
 
   return (
     <div className="mt-10">

@@ -33,10 +33,10 @@ export const BudgetService = () => {
         </div>
         <div>
           <button
-            className="bg-white text-gray-400 py-4 px-2 font-semibold 
-            rounded-tl-2xl rounded-br-2xl
+            className="bg-white text-green-400 py-4 px-2 font-semibold 
+            rounded-tl-2xl rounded-br-2xl duration-500
             hover:rounded-tl-none hover:rounded-br-none
-            hover:rounded-bl-2xl hover:rounded-tr-2xl duration-500
+            hover:rounded-bl-2xl hover:rounded-tr-2xl
             shadow-lg
             "
           >Solicite um orçamento agora!</button>
