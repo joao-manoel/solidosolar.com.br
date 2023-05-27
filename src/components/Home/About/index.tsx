@@ -143,7 +143,7 @@ const AboutUs = () => {
                 IconRotate={90}
               />
               <ContactButton
-                label="Whatsapp"
+                label="Fale conosco"
                 Icon={FaWhatsapp}
                 IconRotate={0}
                 onClick={() => HandleLinkWhatsapp('outro')}
