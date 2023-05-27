@@ -4,19 +4,19 @@ import { IconType } from "react-icons/lib";
 interface ContactButton {
   label: String
   Icon: IconType
+  IconRotate: number
   onClick: () => void
 }
 
-export const ContactButton = ({label, Icon, onClick}: ContactButton) => {
+export const ContactButton = ({label, Icon, onClick, IconRotate}: ContactButton) => {
   return (
-    <div className="flex items-center gap-4 mt-4"
-            >
-              <motion.div
-                
-                whileHover={{ scale: 1.2, rotate: 90 }}
+    <div className="flex items-center gap-4 mt-4">
+      <motion.div
+                initial={{rotate: IconRotate}}
+                whileHover={{ scale: 1.2 }}
                 whileTap={{
                   scale: 0.8,
-                  rotate: -90,
+                  rotate: 90,
                   borderRadius: "100%"
                 }}
                 

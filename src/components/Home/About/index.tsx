@@ -140,10 +140,12 @@ const AboutUs = () => {
                 label="Ligue agora"
                 Icon={AiTwotonePhone}
                 onClick={() => HandlePhoneLink}
+                IconRotate={90}
               />
               <ContactButton
-                label="Nosso whatsapp"
+                label="Whatsapp"
                 Icon={FaWhatsapp}
+                IconRotate={0}
                 onClick={() => HandleLinkWhatsapp('outro')}
               />
             </div>
