@@ -72,7 +72,7 @@ export const Nav = () => {
         ))}
         <Button onClick={() => HandleLinkWhatsapp('orcamento')}>
           <HiClipboardCheck />
-          <span>Faça seu orçamento pelo nosso whatsapp</span>
+          <span>Faça seu orçamento</span>
         </Button>
       </nav>
     </>
