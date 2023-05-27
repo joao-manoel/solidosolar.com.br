@@ -18,7 +18,7 @@ const images = [
 export const Partners = () => {
 
   return (
-    <div className="mt-10">
+    <div id="partners" className="mt-10">
       <header className="relative flex flex-col items-center justify-center">
         <div className="relative flex justify-center z-10">
           <h1 className=" text-5xl sm:text-8xl md:text-9xl lg:text-9xl outlineText relative">Parceiros</h1>

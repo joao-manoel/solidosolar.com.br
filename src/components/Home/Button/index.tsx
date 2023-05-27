@@ -1,11 +1,14 @@
 
 interface ButtonProps {
   children: React.ReactNode
+  onClick: () => void
 }
 
-export const Button = ({ children }: ButtonProps) => {
+export const Button = ({ children, onClick }: ButtonProps) => {
   return (
-    <button className="
+    <button
+      onClick={onClick}
+      className="
       w-11/12 lg:w-auto
       bg-green-500 hover:bg-green-400 text-white 
       shadow-md py-4 lg:py-2 px-6  md:ml-8 duration-500 flex items-center justify-center lg:justify-start

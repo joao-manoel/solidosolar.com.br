@@ -8,6 +8,7 @@ import {
 } from "react-icons/hi";
 import { MdBuild } from "react-icons/md";
 
+import { HandleLinkWhatsapp } from "@/utils/HandlerWhatsapp";
 import { Button } from "../Home/Button";
 
 export const Nav = () => {
@@ -25,7 +26,7 @@ export const Nav = () => {
     },
     {
       name: 'Serviços',
-      url: '/',
+      url: '#services',
       icon: MdBuild
     },
   ]
@@ -69,9 +70,9 @@ export const Nav = () => {
             
           </div>
         ))}
-        <Button>
+        <Button onClick={() => HandleLinkWhatsapp('orcamento')}>
           <HiClipboardCheck />
-          <span>Faça seu Orçamento</span>
+          <span>Faça seu orçamento pelo nosso whatsapp</span>
         </Button>
       </nav>
     </>

@@ -1,3 +1,4 @@
+import { phoneNumber } from "@/utils/HandlerWhatsapp";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { AiTwotonePhone } from "react-icons/ai";
@@ -6,7 +7,7 @@ const AboutUs = () => {
 
   const HandlePhoneLink = (e: any) => {
     e.preventDefault();
-    window.open(`tel:65981301850`)
+    window.open(`tel:${phoneNumber}`)
     
   }
 

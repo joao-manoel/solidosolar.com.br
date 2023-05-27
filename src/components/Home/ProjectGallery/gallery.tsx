@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
@@ -46,7 +47,7 @@ export const GalleryProject = ({ projects }: GalleryProps) => {
             <img 
               alt={project.title}
               src={project.images[0]}
-              className=""
+              className="h-80 bg-cover"
             />
           </motion.div>
         ))}

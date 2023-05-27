@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { AiFillTwitterCircle } from "react-icons/ai";
 import { BsFacebook, BsInstagram } from "react-icons/bs";
 const Footer = () => {
   const socialMediaLinks = [
@@ -12,11 +11,6 @@ const Footer = () => {
       name: "Instagram",
       url: "https://www.instagram.com/solidosolar/",
       icon: <BsInstagram />,
-    },
-    {
-      name: "Twitter",
-      url: "https://www.twitter.com/solidosolar/",
-      icon: <AiFillTwitterCircle />,
     },
   ];
 

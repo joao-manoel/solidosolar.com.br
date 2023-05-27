@@ -1,5 +1,7 @@
 import { TypeProps } from "@/components/WidgetsWhatsapp"
 
+export const phoneNumber = '65992194096'
+
 export const CREATE_MESSAGE = (type: TypeProps) => {
   let message
 
@@ -14,4 +16,8 @@ export const CREATE_MESSAGE = (type: TypeProps) => {
   }
 
   return message
+}
+
+export const HandleLinkWhatsapp = (type: TypeProps) => {
+  window.open(`https://api.whatsapp.com/send?phone=${phoneNumber}&text=${CREATE_MESSAGE(type)}`, '_blank')
 }

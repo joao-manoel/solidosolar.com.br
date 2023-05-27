@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { CREATE_MESSAGE } from "@/utils/CreateMessageWhatsapp";
+import { HandleLinkWhatsapp } from "@/utils/HandlerWhatsapp";
 import { Tooltip } from "flowbite-react";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaWhatsapp } from "react-icons/fa";
@@ -15,8 +15,8 @@ export const WidgetsWhatsapp = () => {
 
   const [type, setType] = useState<TypeProps>('orcamento')
 
-  const HandleLinkWhatsapp = () => {
-    window.open(`https://api.whatsapp.com/send?phone=${phoneNumber}&text=${CREATE_MESSAGE(type)}`, '_blank')
+  const HandleWhatsapp = () => {
+    HandleLinkWhatsapp(type)
     setIsOpen(false)
   }
 
@@ -102,7 +102,7 @@ export const WidgetsWhatsapp = () => {
             </div>
             
             <button
-              onClick={HandleLinkWhatsapp}
+              onClick={HandleWhatsapp}
               className="
               flex justify-center items-center gap-1 text-white rounded-md 
               drop-shadow-md bg-green-500 hover:bg-green-400 duration-500

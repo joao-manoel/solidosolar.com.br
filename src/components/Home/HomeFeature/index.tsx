@@ -1,3 +1,5 @@
+import { HandleLinkWhatsapp } from "@/utils/HandlerWhatsapp"
+
 export const HeroSection = () => {
   return (
     <div className="
@@ -43,6 +45,7 @@ export const HeroSection = () => {
           <span className="animate__animated animate__bounceIn animate__delay-1s">Agronegócio</span>
         </div>
         <button
+          onClick={() => HandleLinkWhatsapp('orcamento')}
           className="px-4 py-2 uppercase font-inter
             bg-green-500 hover:bg-green-400 duration-500
             text-white font-bold text-1xl sm:text-2xl 
