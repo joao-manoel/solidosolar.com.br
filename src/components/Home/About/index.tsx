@@ -1,14 +1,14 @@
-import { phoneNumber } from "@/utils/HandlerWhatsapp";
-import { motion } from "framer-motion";
+import { HandleLinkWhatsapp, phoneNumber } from "@/utils/HandlerWhatsapp";
 import Image from "next/image";
 import { AiTwotonePhone } from "react-icons/ai";
+import { FaWhatsapp } from "react-icons/fa";
+import { ContactButton } from "./ContactButton";
 
 const AboutUs = () => {
 
   const HandlePhoneLink = (e: any) => {
     e.preventDefault();
     window.open(`tel:${phoneNumber}`)
-    
   }
 
   return (
@@ -135,47 +135,17 @@ const AboutUs = () => {
                 nossos serviços de energia solar.
               </p>
             </div>
-            <div
-              className="flex items-center gap-4 mt-4"
-            >
-              <motion.div
-                
-                whileHover={{ scale: 1.2, rotate: 90 }}
-                whileTap={{
-                  scale: 0.8,
-                  rotate: -90,
-                  borderRadius: "100%"
-                }}
-                
-                className="w-16 h-16 flex items-center justify-center relative"
-              >
-                <button
-                  onClick={HandlePhoneLink}
-                  className="
-                  z-10 rounded-full w-11/12 h-11/12 bg-white text-2xl py-4 px-4 text-green-400"
-                >
-                  <AiTwotonePhone />
-                </button>
-                <motion.div
-                  className="w-full h-full absolute border-dotted border-2 rounded-full"
-                  animate={{
-                    scale: [1, 1.2, 1.2, 1, 1],
-                    rotate: [0, 0, 180, 180, 0],
-                    borderRadius: ["100%"]
-                  }}
-                  transition={{
-                    duration: 2,
-                    ease: "easeInOut",
-                    times: [0, 0.2, 0.5, 0.8, 1],
-                    repeat: Infinity,
-                    repeatDelay: 1
-                  }}
-                ></motion.div>
-              </motion.div>
-
-              <span
-                className="text-lg font-thin text-white font-inter"
-              >Ligue agora</span>
+            <div className="flex gap-8">
+              <ContactButton
+                label="Ligue agora"
+                Icon={AiTwotonePhone}
+                onClick={() => HandlePhoneLink}
+              />
+              <ContactButton
+                label="Nosso whatsapp"
+                Icon={FaWhatsapp}
+                onClick={() => HandleLinkWhatsapp('outro')}
+              />
             </div>
           </div>
         </div>
