@@ -6,8 +6,7 @@ import { ContactButton } from "./ContactButton";
 
 const AboutUs = () => {
 
-  const HandlePhoneLink = (e: any) => {
-    e.preventDefault();
+  const HandlePhoneLink = () => {
     window.open(`tel:${phoneNumber}`)
   }
 
@@ -139,7 +138,7 @@ const AboutUs = () => {
               <ContactButton
                 label="Ligue agora"
                 Icon={AiTwotonePhone}
-                onClick={() => HandlePhoneLink}
+                onClick={() => HandlePhoneLink()}
                 IconRotate={90}
               />
               <ContactButton
