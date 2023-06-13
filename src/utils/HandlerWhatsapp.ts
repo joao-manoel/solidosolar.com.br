@@ -9,7 +9,7 @@ export const CREATE_MESSAGE = (type: TypeProps) => {
     message = 'Olá, gostaria de fazer um orçamento!'  
   }
   else if (type === 'duvida') {
-    message = 'Olá, gostaria de algumas duvidas!'
+    message = 'Olá, gostaria de tirar algumas duvidas!'
   }
   else if (type === 'outro') {
     message = 'Olá, Solido Solar!'
