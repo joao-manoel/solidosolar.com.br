@@ -52,7 +52,7 @@ export const Nav = () => {
         {Links.map((link, index) => (
           <div className="text-xl md:text-sm lg:text-lg hover:text-green-400 
             rounded-sm md:hover:shadow-sm py-2 px-1 md:my-0 my-2
-            hover:bg-white hover:drop-shadow-md duration-500 md:border-b-[1px] 
+            duration-500 md:border-b-[1px] 
             md:border-transparent md:hover:border-green-400
             "
             key={index}
